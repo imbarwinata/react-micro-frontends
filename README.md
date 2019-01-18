@@ -1,5 +1,5 @@
-# react-micro-frontends
-Micro Frontends for ReactJS
+# Micro Frontend
+Micro frontends approach to build their web apps with large front-end and break it into parts.
 
 
 ## Installation Guide
