@@ -1,0 +1,16 @@
+version: '3.5'
+
+services:
+
+  sub-app-angular:
+    container_name: sub-app-angular
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - '.:/usr/src/app'
+      - '/usr/src/app/node_modules'
+    ports:
+      - '3001:3001'
+    environment:
+      - NODE_ENV=production

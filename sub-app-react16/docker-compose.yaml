@@ -1,0 +1,16 @@
+version: '3.5'
+
+services:
+
+  sub-app-react:
+    container_name: sub-app-react
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - '.:/usr/src/app'
+      - '/usr/src/app/node_modules'
+    ports:
+      - '3002:3002'
+    environment:
+      - NODE_ENV=production

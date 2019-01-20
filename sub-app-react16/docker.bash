@@ -1,0 +1,4 @@
+# 3000000000000
+export DOCKER_CLIENT_TIMEOUT=320
+export COMPOSE_HTTP_TIMEOUT=320
+docker-compose up -d --build
