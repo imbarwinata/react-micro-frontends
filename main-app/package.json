@@ -48,7 +48,8 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
-    "serve": "node scripts/http-server.js build 3000"
+    "serve": "node scripts/http-server.js build 3000",
+    "serve-express": "nodemon scripts/express-server"
   },
   "jest": {
     "collectCoverageFrom": [
